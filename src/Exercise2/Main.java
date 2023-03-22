@@ -23,14 +23,14 @@ public class Main {
         //Exercise 3
         //putem obtine numele complet folosind metoda getFullName din
         //clasa Exercise3 si dand celor doi parametrii valorile necesare de la obiectul
-        //din clasa DatabaseAdmin (in acest caz, dAdmin fiind obicetul)
+        //din clasa DatabaseAdmin (in acest caz, dAdmin fiind obiectul)
 
         Exercise3 exercise3 = new Exercise3();
         System.out.println(exercise3.getFullName(dAdmin.firstName, dAdmin.lastName));
 
-        //metoda ageGetter are ca parametru data de nastere a obictului dAdmin (obtinuta prin .getBirthday)
-        //metoda se foloseste de un field privat (ageLD) caruia ii atribuie valoarea rezultate din ecuatia
-        //de scadere dintre doua variabile LocalDate [currentDate - birthDate(parametru caruia ii dam valoarea obictului dAdmin)]
+        //metoda ageGetter are ca parametru data de nastere a obiectului dAdmin (obtinuta prin .getBirthday)
+        //metoda se foloseste de un field privat (ageLD) caruia ii atribuie valoarea rezultata din ecuatia
+        //de scadere dintre doua variabile LocalDate [currentDate - birthDate(parametru caruia ii dam valoarea obiectului dAdmin)]
         //apoi folosind metoda .getYear() din clasa LocalDate, atribui anul unei variabile Integer si returnam aceasta variabila.
 
         System.out.println(exercise3.ageGetter(dAdmin.getBirthday()));
